@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sistem informasi forklift</title>
-        <link rel="icon" type="image/x-icon" href="assets/GTicon.png" />
+        <link rel="icon" type="image/x-icon" href="assets/images/GTicon.png" />
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     </head>
@@ -13,36 +13,34 @@
         <div class="flex bg-white rounded-lg overflow-hidden max-w-4xl w-full">
             <!-- Kiri -->
             <div class="w-1/2 p-8 flex flex-col items-center justify-center">
-                <img src="assets\Icon + Text PT. Gajah Tunggal.png" alt="PT. Gajah Tunggal" />
+                <img src="assets/images/Icon + Text PT. Gajah Tunggal.png" alt="PT. Gajah Tunggal" />
                 <p class="text-gray-600 mt-2 text-center">Gajah Tunggal Tbk adalah produsen ban besar, inovatif, dan terpercaya.</p>
-                <img src="assets/Forklift checker.png" alt="Forklift PT. Gajah Tunggal" class="mt-8" />
+                <img src="assets/images/Forklift checker.png" alt="Forklift PT. Gajah Tunggal" class="mt-8" />
             </div>
 
             <!-- Tengah -->
             <div class="h-12 items-center justify-center">
-                <img src="assets/Garis pemisah.png" alt="" />
+                <img src="assets/images/Garis pemisah.png" alt="" />
             </div>
 
             <!-- Kanan -->
             <div class="w-1/2 p-8 flex flex-col justify-center">
                 <h5 class="text-lg font-normal text-gray-500">Masuk untuk memulai</h5>
                 <h1 class="text-3xl font-bold text-gray-800 mt-2">Selamat datang!</h1>
-                <form class="mt-8 space-y-6">
+                <form id="loginForm" class="mt-8 space-y-6">
                     <div>
-                        <label>
-                            <label for="email" class="block text-gray-700">Email</label>
-                            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 mt-1.5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan email anda" type="email" name="email" />
-                        </label>
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input id="email" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 mt-1.5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan email anda" type="email" name="email" />
                     </div>
                     <div>
-                        <label>
-                            <label for="password" class="block text-gray-700">Password</label>
-                            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 mt-1.5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan password anda" type="password" name="password" />
-                        </label>
+                        <label for="password" class="block text-gray-700">Password</label>
+                        <input id="password" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 mt-1.5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan password anda" type="password" name="password" />
                     </div>
-                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">Masuk</button>
+                    <button type="button" onclick="login()" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">Masuk</button>
+                    <p id="error-message" class="text-red-500 text-sm mt-2"></p>
                 </form>
             </div>
         </div>
+        <script src="/src/assets/js/script.js"></script>
     </body>
 </html>
