@@ -3,103 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login Page</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <title>Sistem informasi forklift</title>
+        <link rel="icon" type="image/x-icon" href="assets/GTicon.png" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     </head>
 
     <body class="flex items-center justify-center h-screen">
         <div class="flex bg-white rounded-lg overflow-hidden max-w-4xl w-full">
-            <!-- Left Section -->
+            <!-- Kiri -->
             <div class="w-1/2 p-8 flex flex-col items-center justify-center">
-                <img
-                    src="assets\Icon + Text PT. Gajah Tunggal.png"
-                    alt="PT. Gajah Tunggal"
-                />
-                <p class="text-gray-600 mt-2 text-center">
-                    Gajah Tunggal Tbk adalah produsen ban besar, inovatif, dan
-                    terpercaya.
-                </p>
-                <img
-                    src="assets/Forklift checker.png"
-                    alt="Forklift PT. Gajah Tunggal"
-                    class="mt-8"
-                />
+                <img src="assets\Icon + Text PT. Gajah Tunggal.png" alt="PT. Gajah Tunggal" />
+                <p class="text-gray-600 mt-2 text-center">Gajah Tunggal Tbk adalah produsen ban besar, inovatif, dan terpercaya.</p>
+                <img src="assets/Forklift checker.png" alt="Forklift PT. Gajah Tunggal" class="mt-8" />
             </div>
 
-            <!-- Tengah Section -->
+            <!-- Tengah -->
             <div class="h-12 items-center justify-center">
                 <img src="assets/Garis pemisah.png" alt="" />
             </div>
 
-            <!-- Right Section -->
+            <!-- Kanan -->
             <div class="w-1/2 p-8 flex flex-col justify-center">
-                <h5 class="text-xl font-semibold text-gray-700">
-                    Masuk untuk memulai
-                </h5>
-                <h1 class="text-3xl font-bold text-gray-800 mt-2">
-                    Selamat datang!
-                </h1>
-
+                <h5 class="text-lg font-normal text-gray-500">Masuk untuk memulai</h5>
+                <h1 class="text-3xl font-bold text-gray-800 mt-2">Selamat datang!</h1>
                 <form class="mt-8 space-y-6">
                     <div>
-                        <label for="email" class="block text-gray-700"
-                            >Email</label
-                        >
-                        <div
-                            class="mt-1 relative rounded-md border-2 border-gray-200"
-                        >
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="Masukan email anda"
-                                class="block w-full pl-3 pr-10 py-2 sm:text-sm rounded-md border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-200"
-                            />
-                            <div
-                                class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
-                            >
-                                <span
-                                    class="text-gray-400 sm:text-sm material-icons"
-                                    >Icon email</span
-                                >
-                            </div>
-                        </div>
+                        <label>
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 mt-1.5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan email anda" type="email" name="email" />
+                        </label>
                     </div>
                     <div>
-                        <label for="password" class="block text-gray-700"
-                            >Kata sandi</label
-                        >
-                        <div
-                            class="mt-1 relative rounded-md border-2 border-gray-200"
-                        >
-                            <input
-                                type="password"
-                                id="password"
-                                placeholder="Masukan kata sandi anda, minimal 8 karakter"
-                                class="focus:ring-blue-500 focus:border-blue-500 block w-full pl-3 pr-10 py-2 sm:text-sm border-gray-300 rounded-md"
-                            />
-                            <div
-                                class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
-                            >
-                                <span
-                                    class="text-gray-400 sm:text-sm material-icons"
-                                    >Icon mata</span
-                                >
-                            </div>
-                        </div>
+                        <label>
+                            <label for="password" class="block text-gray-700">Password</label>
+                            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 mt-1.5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan password anda" type="password" name="password" />
+                        </label>
                     </div>
-                    <button
-                        type="submit"
-                        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200"
-                    >
-                        Masuk
-                    </button>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">Masuk</button>
                 </form>
             </div>
         </div>
